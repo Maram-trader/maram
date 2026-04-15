@@ -298,6 +298,11 @@
       gap: 16px;
       margin-top: 32px;
     }
+    .about-pillars .pillar:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      max-width: calc(50% - 8px);
+      margin: 0 auto;
+    }
     .pillar {
       padding: 20px;
       background: var(--cream);
@@ -318,6 +323,51 @@
     .pillar .pillar-icon {
       font-size: 1.4rem;
       margin-bottom: 8px;
+    }
+
+    /* ─── Operational Hubs ────────────────────────────────────── */
+    .ops-hubs {
+      margin-top: 36px;
+      border-top: 1px solid rgba(30,102,53,0.15);
+      padding-top: 28px;
+    }
+    .ops-hubs h4 {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: 16px;
+    }
+    .hubs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .hub-card {
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--tan);
+    }
+    .hub-card .hub-region {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--brown-warm);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hub-card .hub-countries {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.88rem;
+      color: #2d6b3a;
+      line-height: 1.5;
     }
 
     /* ─── Why Us ───────────────────────────────────────────────── */
@@ -582,7 +632,7 @@
     <div class="hero-content">
       <div class="hero-eyebrow">Premium Timber Trading</div>
       <h1>Rooted in Quality,<br><em>Built to Last</em></h1>
-      <p>Maram supplies premium-grade timber for construction, furniture, and industrial needs — sourced responsibly, delivered reliably.</p>
+      <p>Maram trading company supplies premium-grade timber for construction, furniture, and industrial needs — sourced responsibly, delivered reliably.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn-primary">Request a Quote</a>
         <a href="#about" class="btn-outline">Learn More</a>
@@ -590,16 +640,12 @@
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="num">15+</div>
+        <div class="num">100+</div>
         <div class="label">Years of Experience</div>
       </div>
       <div class="stat">
-        <div class="num">500+</div>
+        <div class="num">500,000+</div>
         <div class="label">Projects Delivered</div>
-      </div>
-      <div class="stat">
-        <div class="num">30+</div>
-        <div class="label">Timber Species</div>
       </div>
     </div>
   </section>
@@ -609,42 +655,61 @@
     <div class="about-grid">
       <div class="about-image-wrap">
         <img
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
+          src="https://images.unsplash.com/photo-1542621334-a254cf47733d?w=800&auto=format&fit=crop&q=80"
           alt="Timber yard at Maram Trading"
         />
         <div class="about-badge">
-          <div class="badge-num">15+</div>
+          <div class="badge-num">100+</div>
           <div class="badge-text">Years in Trade</div>
         </div>
       </div>
       <div class="about-text">
         <div class="section-tag">About Maram</div>
-        <h2 class="section-title">Timber Trading,<br><em>Done Right</em></h2>
+        <h2 class="section-title">A Century of Legacy,<br><em>Built on Integrity</em></h2>
         <div class="divider"></div>
-        <p>Maram is a trusted timber trading company with over a decade of experience supplying high-quality wood to builders, contractors, manufacturers, and retailers across the region.</p>
-        <p>We take pride in our deep relationships with responsible forests and mills, ensuring every plank we deliver meets the highest standards of quality, durability, and sustainability.</p>
+        <p>In the global timber trade, time is the ultimate measure of quality and reliability. Maram Trading Company Pvt Ltd is the modern manifestation of a profound, four-generation legacy that spans nearly a century. Today, our company stands as a unique bridge between eras, managed by the enduring wisdom of our great-grandfather and driven by the strategic innovation of the fourth generation. This lineage ensures that every cubic meter of wood we trade carries with it a century of reputation, expertise, and an ancestral commitment to integrity.</p>
+        <p>To meet the rigorous demands of India's industrial and architectural sectors, we have established an elite procurement network spanning four continents. Our reach is truly global, sourcing premium, sustainable timber from the high-durability reserves of Latin America, the structural hardwoods of Africa, and the gold-standard plantations of Malaysia and South East Asia. This vast geographical footprint allows us to provide a diversified portfolio of species, ensuring our clients have access to the specific grain and density required for large-scale projects.</p>
         <div class="about-pillars">
           <div class="pillar">
+            <div class="pillar-icon">🌍</div>
+            <h4>4-Continent Sourcing</h4>
+            <p>Premium timber from Latin America, Africa, Malaysia & South East Asia.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">👴</div>
+            <h4>Four-Generation Legacy</h4>
+            <p>Nearly a century of expertise, integrity & trade relationships.</p>
+          </div>
+          <div class="pillar">
             <div class="pillar-icon">🌲</div>
-            <h4>Responsible Sourcing</h4>
-            <p>We work with certified, sustainable suppliers.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">🔨</div>
-            <h4>Trade & Construction</h4>
-            <p>Timber for structural, joinery, and finishing use.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">🚚</div>
-            <h4>Reliable Delivery</h4>
-            <p>On-time delivery to your site or warehouse.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">💼</div>
-            <h4>Bulk & Custom Orders</h4>
-            <p>Flexible quantities — from small to large projects.</p>
+            <h4>Sustainable Stewardship</h4>
+            <p>Timber sourced exclusively from sustainably managed forests.</p>
           </div>
         </div>
+
+        <!-- Operational Hubs -->
+        <div class="ops-hubs">
+          <h4>🌐 Operational Hubs</h4>
+          <div class="hubs-grid">
+            <div class="hub-card">
+              <div class="hub-region">🇮🇳 India</div>
+              <div class="hub-countries">Tamil Nadu (HQ)</div>
+            </div>
+            <div class="hub-card">
+              <div class="hub-region">🌎 Latin America</div>
+              <div class="hub-countries">Brazil &nbsp;·&nbsp; Colombia &nbsp;·&nbsp; Ecuador &nbsp;·&nbsp; El Salvador</div>
+            </div>
+            <div class="hub-card">
+              <div class="hub-region">🌍 Africa</div>
+              <div class="hub-countries">Togo &nbsp;·&nbsp; Ghana &nbsp;·&nbsp; Benin</div>
+            </div>
+            <div class="hub-card">
+              <div class="hub-region">🌏 South East Asia</div>
+              <div class="hub-countries">Thailand &nbsp;·&nbsp; Laos &nbsp;·&nbsp; Indonesia &nbsp;·&nbsp; Malaysia</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -717,7 +782,7 @@
             </div>
             <div class="contact-item-text">
               <div class="label">Email</div>
-              <div class="value">info@maramtimber.com</div>
+              <div class="value">contact@maram.info</div>
             </div>
           </div>
           <div class="contact-item">
@@ -726,7 +791,7 @@
             </div>
             <div class="contact-item-text">
               <div class="label">Phone</div>
-              <div class="value">+60 12-345 6789</div>
+              <div class="value">+91 7373291444</div>
             </div>
           </div>
           <div class="contact-item">
@@ -735,7 +800,7 @@
             </div>
             <div class="contact-item-text">
               <div class="label">Location</div>
-              <div class="value">Kuala Lumpur, Malaysia</div>
+              <div class="value">Tamil Nadu, India</div>
             </div>
           </div>
         </div>
@@ -746,11 +811,11 @@
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Ahmad" required />
+              <input type="text" id="fname" name="fname" placeholder="" required />
             </div>
             <div class="form-group">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" placeholder="Razali" required />
+              <input type="text" id="lname" name="lname" placeholder="" required />
             </div>
           </div>
           <div class="form-group">
@@ -759,7 +824,7 @@
           </div>
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+60 12-000 0000" />
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
           </div>
           <div class="form-group">
             <label for="product">Timber Type / Product</label>
@@ -781,6 +846,7 @@
           <div class="form-success" id="successMsg">
             Thank you! We've received your enquiry and will be in touch within 1 business day.
           </div>
+          <div class="form-success" id="errorMsg" style="display:none; border-color:#e87a7a; color:#e87a7a; background:rgba(232,122,122,0.1);"></div>
         </form>
       </div>
     </div>
@@ -812,11 +878,37 @@
       mobileMenu.style.display = 'none';
     }
 
-    // Contact form mock submit
-    function handleSubmit(e) {
+    // Contact form — sends to contact@maram.info via Formspree
+    async function handleSubmit(e) {
       e.preventDefault();
-      document.getElementById('successMsg').style.display = 'block';
-      e.target.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+      const form = e.target;
+      const btn = form.querySelector('.form-submit');
+      const successMsg = document.getElementById('successMsg');
+      const errorMsg = document.getElementById('errorMsg');
+
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      errorMsg.style.display = 'none';
+
+      try {
+        const res = await fetch('https://formspree.io/f/xvzdzgjd', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        const json = await res.json();
+        if (res.ok) {
+          successMsg.style.display = 'block';
+          form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+        } else {
+          throw new Error(json.errors?.map(e => e.message).join(', ') || 'Submission failed');
+        }
+      } catch (err) {
+        btn.textContent = 'Send Enquiry →';
+        btn.disabled = false;
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'Failed to send. Please try again or email us at contact@maram.info';
+      }
     }
 
     // Smooth scroll for all anchor links
